@@ -11,6 +11,7 @@ using System.Net.Http.Formatting;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.WindowsAzure.Storage;
 
 namespace CallRequestResponseService
 {
@@ -49,7 +50,7 @@ namespace CallRequestResponseService
                     {
                     }
                 };
-                const string apiKey = "abc123"; // Replace this with the API key for the web service
+                const string apiKey = "HhOPap0qgXc0bXDrPy1cHhVviVp8LApk2ps664J6AKXvarAS3KOtm22y7x1DiLbZdp/UAf63hO2J2yiExL+XUA=="; // Replace this with the API key for the web service
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
 
                 client.BaseAddress = new Uri("https://ussouthcentral.services.azureml.net/workspaces/981b41995e554a238277825de092ac33/services/561e26b49eb647b1a10454695ead36d0/execute?api-version=2.0&details=true");
